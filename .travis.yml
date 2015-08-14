@@ -1,6 +1,6 @@
 language: android
 
-ddons:
+addons:
     apt:
         packages:
         - libgd2-xpm
@@ -35,4 +35,4 @@ cache:
     - $(pwd)/android-ndk-r10e
 
 script:
-    - ./gradlew clean build
+    - bash build.sh
