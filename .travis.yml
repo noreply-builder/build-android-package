@@ -25,7 +25,7 @@ notifications:
 
 before_install:
     - bash setup.sh
-    - bash env.sh
+    - source env.sh
 
 install:
     - bash install-package.sh
