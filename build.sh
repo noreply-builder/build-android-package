@@ -3,6 +3,8 @@ cd ShadowVPNAndroid
 
 ls
 
+make
+
 #gradle clean build
 gradle clean assembleDebug
 
