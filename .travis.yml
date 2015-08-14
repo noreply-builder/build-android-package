@@ -32,7 +32,7 @@ install:
 
 cache:
     directories:
-    - $HOME/android-ndk-r10e-linux-x86_64.bin
+    - $HOME/ndk/
 
 script:
     - bash build.sh
