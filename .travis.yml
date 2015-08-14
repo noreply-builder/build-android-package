@@ -1,8 +1,8 @@
 language: android
 
 ddons:
-  apt:
-    packages:
+    apt:
+        packages:
         - libgd2-xpm
         - ia32-libs
         - ia32-libs-multiarch
@@ -12,11 +12,11 @@ ddons:
         - automake
 
 android:
-   components:
-   - platform-tools
-   - android-21
-   - build-tools-21.1.2
-   - extra
+    components:
+    - platform-tools
+    - android-21
+    - build-tools-21.1.2
+    - extra
 
 jdk: oraclejdk7
 
@@ -31,7 +31,7 @@ install:
     - bash install-package.sh
 
 cache:
-  directories:
+    directories:
     - $(pwd)/android-ndk-r10e
 
 script:
