@@ -6,7 +6,6 @@ addons:
         - libgd2-xpm
         - ia32-libs
         - ia32-libs-multiarch
-        - p7zip
         - git
         - libtool
         - automake
