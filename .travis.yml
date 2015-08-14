@@ -9,6 +9,7 @@ addons:
         - git
         - libtool
         - automake
+        - gradle
 
 android:
     components:

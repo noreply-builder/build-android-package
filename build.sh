@@ -3,6 +3,6 @@ cd ShadowVPNAndroid
 
 ls
 
-./gradlew clean build
+gradle clean build
 
 
