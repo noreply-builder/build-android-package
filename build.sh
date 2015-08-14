@@ -1,9 +1,11 @@
 #!/bin/sh
 cd ShadowVPNAndroid
 
+sed -i '1 i\SHELL := $(shell echo $$SHELL)' Makefile
+
 ls
 
-make
+make || exit 1
 
 #gradle clean build
 gradle clean assembleDebug
