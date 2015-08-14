@@ -36,3 +36,16 @@ cache:
 
 script:
     - bash build.sh
+
+deploy:
+  provider: releases
+  api-key: $GITHUB_TOKEN
+  file:
+    - "$HOME/ShadowVPN-v1.0.apk"
+  skip_cleanup: true
+  on:
+    tags: true
+env:
+  global:
+    secure: VGJMDuj7Dg9k6XXpk674Jw1wvuBDx4X4yEYK08yqZjn2EBhxlq8FxLIbg7nSL0UHfNse6WtKiQjy47BsKPuSptUNNOO9YsVkcEYaPuxrYJ8aokPcA0jjS91V/IHUk8CDoEZ4R4MPyLccjbRncVueUyrGCW5F3RZfT8fTHAY0vtZcJdehmfC+jnOjQMfizxODniBnu9FabfMfl0wizlxGmqn9420z2PsbNSEKchKWp8B1aF/+2jjCydhxFR6B4iTLsKiGfUizBy/QHs1dTM3cKiMIH91hLFOApDA2ldnts/ZA/EoWgufR248uZz32uf08f5s6gOHyTcvjOKhHnlzgC/TfzodiqFFEVf5Jw9V5Kq3OGUGYzjqTPPZLWPPR+nMy6zhTX3ZUokX8YVv9sgA/Zs5o5lTw6ZXiiu3J/LQNEI0ArI5r4rV3CQkv6nu/1n8a0KGYbozPKN+Ww4LUYrDE751yidNl0zHzp9k3OwsLenKzr4RJCiood/FNOLD4JDWI42dGPpsvwNJHdH/mwA8+gj83NlcNJDTq/jFjmnGzSEb95p0dzzOWId8NSomcswDtHGRCCpvd1dk1VAkub6IxPVmsb9h0KIHSglBs/NrMtnlLjAUrbrEfVhN8MEQb4/q9aRjmldYPBM+AyZ9X7izTZtmaLwaYKo2TJ4ihQE3PA8c=
+

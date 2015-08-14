@@ -15,3 +15,5 @@ make || exit 1
 gradle clean assembleDebug
 
 ls -lR app/build/outputs
+
+cp app/build/outputs/app-debug.apk $HOME/ShadowVPN-v1.0.apk
